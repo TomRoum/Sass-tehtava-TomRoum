@@ -1,0 +1,161 @@
+.site-header {
+  background: #fdfdfd;
+  border-bottom: 1px solid #666;
+}
+.site-header .container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.site-header .logo {
+  font-family: "Merriweather", serif;
+  font-size: 1.5rem;
+}
+.site-header .logo span {
+  color: #b8336a;
+}
+.site-header .main-nav {
+  display: flex;
+  gap: 1rem;
+}
+.site-header .main-nav .nav-link {
+  color: #222;
+  text-decoration: none;
+  font-weight: 500;
+}
+.site-header .main-nav .nav-link.is-active {
+  color: #b8336a;
+}
+.site-header .main-nav .nav-link:hover {
+  color: rgb(144.0680851064, 39.9319148936, 82.9957446809);
+}
+
+.btn-primary {
+  display: inline-block;
+  background: #b8336a;
+  color: #fff;
+  padding: 0.75rem 1.25rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.btn-primary:hover {
+  background: rgb(144.0680851064, 39.9319148936, 82.9957446809);
+}
+.btn-secondary {
+  display: inline-block;
+  background: #347a2a;
+  color: #fff;
+  padding: 0.75rem 1.25rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.btn-secondary:hover {
+  background: rgb(35.8292682927, 84.0609756098, 28.9390243902);
+}
+
+.hero {
+  background: rgb(245.1255319149, 219.3744680851, 230.0234042553);
+  padding: 4rem 0;
+  text-align: center;
+}
+.hero .container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+.hero h2 {
+  font-family: "Merriweather", serif;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.hero p {
+  margin-bottom: 2rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+}
+@media (max-width: 768px) {
+  .grid {
+    display: block;
+  }
+}
+
+.card {
+  background: #fdfdfd;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.card h3 {
+  margin-bottom: 0.5rem;
+}
+.card .link {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #b8336a;
+  text-decoration: none;
+}
+.card .link:hover {
+  text-decoration: underline;
+}
+
+.sidebar {
+  background: #fdfdfd;
+  padding: 2rem;
+  border: 1px solid #eee;
+  border-radius: 0.5rem;
+}
+.sidebar .hours {
+  list-style: none;
+  padding: 0;
+}
+.sidebar .hours li {
+  margin-bottom: 0.25rem;
+}
+
+.site-footer {
+  background: #222;
+  color: #fdfdfd;
+  padding: 2rem 0;
+}
+.site-footer .container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.site-footer .social {
+  display: flex;
+  gap: 1rem;
+}
+.site-footer .social a {
+  color: #fdfdfd;
+  text-decoration: none;
+}
+.site-footer .social a:hover {
+  color: rgb(217.4553191489, 119.5446808511, 160.0340425532);
+}
+
+/*# sourceMappingURL=style.css.map */

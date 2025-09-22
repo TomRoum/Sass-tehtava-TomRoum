@@ -1,0 +1,66 @@
+// Functions
+@function shade($color, $amount) {
+  @return darken($color, $amount);
+}
+
+@function tint($color, $amount) {
+  @return lighten($color, $amount);
+}
+
+// Container
+@mixin container($width: $container-width) {
+  width: 100%;
+  max-width: $width;
+  margin: 0 auto;
+  padding: 0 $spacing-unit;
+}
+
+// Grid
+@mixin grid($columns: 3, $gap: 2rem) {
+  display: grid;
+  grid-template-columns: repeat($columns, 1fr);
+  gap: $gap;
+}
+
+// Sidebar layout
+@mixin sidebar($sidebar-width: 300px) {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+}
+
+// Media queries
+@mixin respond($bp) {
+  @if $bp == md {
+    @media (max-width: 768px) { @content; }
+  }
+  @else if $bp == sm {
+    @media (max-width: 576px) { @content; }
+  }
+}
+
+// Buttons
+@mixin btn($bg, $color: #fff) {
+  display: inline-block;
+  background: $bg;
+  color: $color;
+  padding: 0.75rem 1.25rem;
+  border: none;
+  border-radius: $radius;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+
+  &:hover {
+    background: shade($bg, 10%);
+  }
+}
+
+// Card
+@mixin card {
+  background: $light;
+  padding: $spacing-unit * 2;
+  border-radius: $radius;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
